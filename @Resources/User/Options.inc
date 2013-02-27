@@ -50,4 +50,4 @@ WeatherURL=http://xml.weather.com/weather/local/#Zipcode#?cc=*&dayf=6
 WeatherCode=USKS0638
 WeatherCodeLat=38.92
 WeatherCodeLon=-94.63
-Unit=c
+Unit=f

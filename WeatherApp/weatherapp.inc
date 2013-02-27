@@ -1,11 +1,11 @@
 ;--------------------------------------------------------------------------------------------
 ; WEATHER
 
-[StyleWeatherNormal]
-X=12
-Y=5R
-W=48
-H=48
+[StyleWeatherImage]
+X=24
+Y=18r
+W=64
+H=64
 ImageName=#@#Images\weather\%1.png
 
 [StyleWeatherHeading]
@@ -19,21 +19,31 @@ ClipString=0
 X=R
 Y=5R
 
-[StyleTempText]
-StringAlign=right
+[StyleWeatherText]
+StringAlign=Left
 FontColor=#colorWhite#
 FontFace=#fontMain#
-FontSize=14
+FontSize=16
 AntiAlias=1
 ClipString=0
-X=r
-Y=R
+X=96
+Y=12R
+
+[StyleTempText]
+StringStyle=Bold
+
+[StyleWeatherCity]
+FontSize=12
+X=96
+Y=-10R
+
+[StyleWeatherDesc]
+FontSize=10
+X=96
+Y=-6R
 
 ;---------------------------------------------------------------------
 ; MEASURES
-
-
-
 
 ;---------------------------------------------------------------------
 ; METERS
@@ -61,27 +71,51 @@ Meter=IMAGE
 MeterStyle=StylePaneContentArea
 H=(#WeatherAppPaneHeight#-4)
 
+
 ;-----------------------
-; TEXT
+; Weather
 
 [MeterResetTopPosition]
 Meter=Image
 MeterStyle=PaneResetTop
 
-;-----------------------
-; DAY 1
-
 [Icon]
 Meter=IMAGE
-MeterStyle=StyleWeatherNormal
+MeterStyle=StyleWeatherImage
 MeasureName=MeasureWeatherIcon
 
+
+
+[MeterResetTopPosition2]
+Meter=Image
+MeterStyle=PaneResetTop
+
+
+[Temp]
+Meter=STRING
+MeasureName=MeasureWeatherTemp
+MeterStyle=StyleWeatherText | StyleTempText
+Text=%1 °F
+
+[City]
+Meter=STRING
+MeasureName=MeasureWeatherCity
+MeterStyle=StyleWeatherText | StyleWeatherCity
+
+
+[WeatherDesc]
+Meter=STRING
+MeasureName=MeasureWeatherDesc
+MeterStyle=StyleWeatherText | StyleWeatherDesc
+
+[TempHighLow]
+Meter=String
+MeasureName=MeasureWeatherDay2Low
+MeasureName2=MeasureWeatherDay2High
+MeterStyle=StyleWeatherText | StyleWeatherDesc
+Text=%1° / %2°
+
+
+
 ;-----------------------
-; Weather
 
-
-;-----------------------
-
-[BorderBottom]
-Meter=IMAGE
-MeterStyle=StyleWeatherBorder | StyleWeatherBorderBottom

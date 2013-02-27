@@ -16,6 +16,8 @@ WeatherPaneHeight=60
 WeatherAppPaneHeight=100
 ClockPanelHeight=220
 TimePanelHeight=72
+SystemPaneHeight=120
+
 
 
 
@@ -43,6 +45,7 @@ W=(#SidebarWidth#-16)
 
 [StylePaneContentArea]
 SolidColor=#colorTransparent#
+;SolidColor=#colorPink#
 X=2r
 Y=2r
 W=(#SidebarWidth#-24)
@@ -57,3 +60,16 @@ Y=4
 W=(#SidebarWidth#-24)
 H=0
 
+
+[PaneResetBottom]
+SolidColor=#colorTransparent#
+X=12
+W=(#SidebarWidth#-24)
+H=0
+
+
+[PaneResetCenter]
+SolidColor=#colorTransparent#
+X=12
+W=(#SidebarWidth#-24)
+H=0

@@ -108,6 +108,7 @@ MeterStyle=PaneResetTop
 Meter=String
 MeasureName=MeasureDay
 MeterStyle=StyleDay
+StringEffect=Shadow
 Text="%1"
 
 [MeterResetTopPosition2]

@@ -86,7 +86,8 @@ Text=#City#
 Meter=STRING
 MeterStyle=StyleTempText
 MeasureName=mCurrent.Temp
-Text=%1 °F
+Text=%1
+Postfix="°"
 
 ;-----------------------
 
