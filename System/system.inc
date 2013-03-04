@@ -132,6 +132,7 @@ Meter=String
 MeasureName=MeasureUserName
 MeasureName2=MeasureComputerName
 MeterStyle=StyleSystemText
+FontSize=09
 StringCase=lower
 StringEffect=shadow
 X=R
@@ -142,12 +143,14 @@ Meter=String
 MeasureName=MeasureOSVersion
 MeasureName2=MeasureOSBits
 MeterStyle=StyleSystemText
+FontSize=09
 Text=%1 (%2 Bit)
 
 [SystemIPAddress]
 Meter=String
 MeasureName=MeasureIPAddress
 MeterStyle=StyleSystemText
+FontSize=09
 Text="%1"
 
 
