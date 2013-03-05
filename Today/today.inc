@@ -54,6 +54,18 @@ X=R
 Y=r
 
 
+[StyleTime]
+StringAlign=right
+FontColor=#colorWhite#
+FontFace=#fontMain#
+StringStyle=Bold
+FontSize=11
+AntiAlias=1
+ClipString=0
+X=R
+Y=R
+
+
 ;---------------------------------------------------------------------
 ; MEASURES
 [MeasureWeekday]
@@ -71,6 +83,10 @@ Format=%Y
 [MeasureDay]
 Measure=Time
 Format=%d
+
+[MeasureTime]
+Measure=Time
+Format=%H:%M:%S
 
 ;---------------------------------------------------------------------
 ; METERS
@@ -137,3 +153,16 @@ Text="%1"
 Meter=Image
 MeterStyle=StyleTodayBar
 DynamicVariables=1
+
+
+
+[ShowTime]
+Meter=String
+MeasureName=MeasureTime
+MeterStyle=StyleTime
+Text=%1
+
+[MeterResetBottomPosition]
+Meter=Image
+MeterStyle=PaneResetBottom
+Y=(#TodayPaneHeight#-4)
