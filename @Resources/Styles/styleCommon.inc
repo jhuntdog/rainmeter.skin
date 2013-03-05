@@ -18,7 +18,7 @@ ClockPanelHeight=220
 TimePanelHeight=72
 SystemPaneHeight=120
 NotesPaneHeight=180
-
+PerformancePaneHeight=180
 
 
 
@@ -61,12 +61,23 @@ Y=4
 W=(#SidebarWidth#-24)
 H=0
 
+[PaneResetRight]
+SolidColor=#colorTransparent#
+X=(#SidebarWidth#-12)
+Y=4
+W=0
 
 [PaneResetBottom]
 SolidColor=#colorTransparent#
 X=12
 W=(#SidebarWidth#-24)
 H=0
+
+[PaneResetLeft]
+SolidColor=#colorTransparent#
+X=12
+Y=4
+W=0
 
 
 [PaneResetCenter]
