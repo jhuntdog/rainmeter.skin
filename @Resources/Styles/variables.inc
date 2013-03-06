@@ -36,6 +36,8 @@ colorTransparent=255,255,255,2
 colorSkyBlueDark=9,74,178
 colorSkyBlueLight=10,91,196
 
+colorGrayLight80=153,153,153,204
+colorGrayLighter80=238,238,238,204
 ; Typography
 ; --------------------------------------------------
 
