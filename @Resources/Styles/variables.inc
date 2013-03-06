@@ -29,6 +29,7 @@ colorGray=85,85,85
 colorGrayLight=153,153,153
 colorGrayLighter=238,238,238
 colorWhite=255,255,255
+colorWhiteTrans=255,255,255,200
 
 colorSemiTransparent=255,255,255,125
 colorTransparent=255,255,255,2

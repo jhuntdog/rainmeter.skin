@@ -11,21 +11,14 @@ SkinMouseOver=0
 
 SidePaneContentWidth=(#SidebarWidth#-24)
 
-TodayPaneHeight=85
-WeatherPaneHeight=60
-WeatherAppPaneHeight=100
-ClockPanelHeight=220
-TimePanelHeight=72
-SystemPaneHeight=120
-NotesPaneHeight=180
-PerformancePaneHeight=86
+PerMonPaneHeight=54
 
 
 
 [StylePaneBackground]
-SolidColor=#colorBlueTrans#
-MouseOverAction=[!SetOption #CURRENTSECTION# SolidColor #colorBlue#][!UpdateMeter #CURRENTSECTION#][!Redraw]
-MouseLeaveAction=[!SetOption #CURRENTSECTION# SolidColor #colorBlueTrans#][!UpdateMeter #CURRENTSECTION#][!Redraw]
+SolidColor=#colorWhiteTrans#
+MouseOverAction=[!SetOption #CURRENTSECTION# SolidColor #colorWhite#][!UpdateMeter #CURRENTSECTION#][!Redraw]
+MouseLeaveAction=[!SetOption #CURRENTSECTION# SolidColor #colorWhiteTrans#][!UpdateMeter #CURRENTSECTION#][!Redraw]
 W=(#SidebarWidth#-20)
 X=10
 Y=2r
@@ -40,7 +33,7 @@ W=#SidebarWidth#
 H=0
 
 [StylePaneOutline]
-SolidColor=#colorTransparent#
+SolidColor=#colorGrayLight#
 X=8
 W=(#SidebarWidth#-16)
 
