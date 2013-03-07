@@ -21,6 +21,16 @@ colorOrange=240,150,9
 colorRed=229,20,0
 colorGreen=51,153,51
 
+colorPurpleTrans=104,72,201,200
+colorMagentaTrans=255,0,151,200
+colorTealTrans=0,171,169,200
+colorLimeTrans=140,191,38,200
+colorBrownTrans=160,80,0,200
+colorPinkTrans=230,113,184,200
+colorOrangeTrans=240,150,9,200
+colorRedTrans=229,20,0,200
+colorGreenTrans=51,153,51,200
+
 ;Grays
 colorBlack=0,0,0
 colorGrayDarker=34,34,34
@@ -39,6 +49,9 @@ colorSkyBlueLight=10,91,196
 
 colorGrayLight80=153,153,153,204
 colorGrayLighter80=238,238,238,204
+colorGrayLighter60=238,238,238,150
+
+
 ; Typography
 ; --------------------------------------------------
 

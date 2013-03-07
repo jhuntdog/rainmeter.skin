@@ -86,6 +86,11 @@ MeterStyle=StyleSystemGraph | StyleSystemGraphMemory
 MeasureName=MeasureRam
 Autoscale=0
 
+[GraphLineMemory]
+Meter=Line
+MeterStyle=StyleSystemGraphLine
+LineColor=#colorPurple#
+MeasureName=MeasureRam
 
 
 ;-----------------------

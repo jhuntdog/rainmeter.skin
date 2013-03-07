@@ -35,10 +35,22 @@ W=76
 H=26
 
 [StyleSystemGraphCpu]
-PrimaryColor=#colorBlue#
+PrimaryColor=#colorBlueTrans#
 
 [StyleSystemGraphMemory]
-PrimaryColor=#colorPurple#
+PrimaryColor=#colorPurpleTrans#
+
+[StyleSystemGraphLine]
+LineCount=1
+LineWidth=1
+AutoScale=0
+AntiAlias=1
+X=14
+Y=14
+W=76
+H=26
+SolidColor=#colorGrayLighter60#
+LineStart=Right
 
 ;-----------------------
 ; LABEL METERS

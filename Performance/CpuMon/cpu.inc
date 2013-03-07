@@ -83,12 +83,22 @@ MeterStyle=StyleGraphFrameInner
 ;-----------------------
 ; GRAPH
 
-
 [CpuGraph]
 Meter=Histogram
 MeterStyle=StyleSystemGraph | StyleSystemGraphCpu
 MeasureName=MeasureCpu
 Autoscale=0
+
+
+[CpuGraphLine]
+Meter=Line
+MeterStyle=StyleSystemGraphLine
+LineColor=#colorBlue#
+MeasureName=MeasureCpu
+
+
+
+;MeterStyle=StyleSystemGraph | StyleSystemGraphCpu
 
 ;-----------------------
 ; TEXT STATS
