@@ -14,6 +14,9 @@ H=30
 [StyleGraphFrameCpu]
 SolidColor=#colorBlue#
 
+[StyleGraphFrameMemory]
+SolidColor=#colorPurple#
+
 [StyleGraphFrameInner]
 SolidColor=#colorWhite#
 X=2r
@@ -26,7 +29,6 @@ H=26
 
 [StyleSystemGraph]
 AntiAlias=1
-AutoScale=1
 X=14
 Y=14
 W=76
@@ -34,6 +36,9 @@ H=26
 
 [StyleSystemGraphCpu]
 PrimaryColor=#colorBlue#
+
+[StyleSystemGraphMemory]
+PrimaryColor=#colorPurple#
 
 ;-----------------------
 ; LABEL METERS
@@ -48,7 +53,6 @@ ClipString=0
 
 [StyleTextStatLabel]
 StringAlign=left
-FontColor=#colorBlueTrans#
 FontSize=10
 StringStyle=bold
 AntiAlias=1
@@ -59,7 +63,6 @@ Y=10
 
 [StyleTextStatValue]
 StringAlign=left
-FontColor=#colorBlue#
 FontSize=8
 AntiAlias=1
 ClipString=0
@@ -68,12 +71,25 @@ y=-2R
 
 [StyleTextStatValue2]
 StringAlign=left
-FontColor=#colorBlue#
 FontSize=8
 AntiAlias=1
 ClipString=0
 x=R
 y=r
+
+
+[StyleLabelCpu]
+FontColor=#colorBlue#
+
+[StyleLabelMemory]
+FontColor=#colorPurple#
+
+[StyleLabelHdd]
+FontColor=#colorGreen#
+
+[StyleLabelNet]
+FontColor=#colorMagenta#
+
 
 ;-------------------------------------------------------------
 

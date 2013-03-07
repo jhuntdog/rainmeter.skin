@@ -11,21 +11,17 @@
 ;---------------------------------------------------------------------
 ; MEASURES
 
-[MeasureCpu]
-Measure=CPU
+[MeasureRam]
+Measure=PhysicalMemory
 
-[MeasureCpuMhzFloating]
-Measure=Plugin
-Plugin=Plugins\PowerPlugin.dll
-PowerState=MHZ
+[MeasurePhysMemTotal]
+Measure=PhysicalMemory
+Total=1
+UpdateDivider=3600
 
-[MeasureCpuGhz]
-Measure=Calc
-Formula=MeasureCpuMhzFloating * 0.001
-
-[MeasureCpuPercent]
-Measure=Calc
-Formula=MeasureCPU / 100
+[MeasurePhysMemUsed]
+Measure=PhysicalMemory
+UpdateDivider=2
 
 
 
@@ -65,14 +61,14 @@ Meter=Image
 MeterStyle=PaneResetTop
 
 ;------------
-; CPU
+; RAM
 
 ;-----------------------
 ; GRAPH FRAME
 
 [GraphFrameOutline]
 Meter=Image
-MeterStyle=StyleGraphFrameOutline | StyleGraphFrameCpu
+MeterStyle=StyleGraphFrameOutline | StyleGraphFrameMemory
 
 [GraphFrameInner]
 Meter=Image
@@ -84,32 +80,36 @@ MeterStyle=StyleGraphFrameInner
 ; GRAPH
 
 
-[CpuGraph]
+[GraphMemory]
 Meter=Histogram
-MeterStyle=StyleSystemGraph | StyleSystemGraphCpu
-MeasureName=MeasureCpu
+MeterStyle=StyleSystemGraph | StyleSystemGraphMemory
+MeasureName=MeasureRam
 Autoscale=0
+
+
 
 ;-----------------------
 ; TEXT STATS
-
-[LabelCpu]
+[LabelMemory]
 Meter=STRING
-MeterStyle=StyleTextStat | StyleTextStatLabel | StyleLabelCpu
-Text="CPU"
+MeterStyle=StyleTextStat | StyleTextStatLabel | StyleLabelMemory
+Text="RAM"
 
-[TextCpuValue1]
+[TextMemoryValue1]
 Meter=STRING
-MeterStyle=StyleTextStat | StyleTextStatValue | StyleLabelCpu
-MeasureName=MeasureCpu
+MeterStyle=StyleTextStat | StyleTextStatValue | StyleLabelMemory
+MeasureName=MeasureRam
+Percentual=1
+AutoScale=1
 Text="%1%"
 
-[TextCpuValueMhz]
+[TextMemoryValue2]
 Meter=STRING
-MeterStyle=StyleTextStat | StyleTextStatValue2 | StyleLabelCpu
-MeasureName=MeasureCpuGhz
-NumOfDecimals=2
-Text="%1 GHz"
+MeterStyle=StyleTextStat | StyleTextStatValue2 | StyleLabelMemory
+MeasureName=MeasurePhysMemUsed
+MeasureName2=MeasurePhysMemTotal
+AutoScale=1
+Text="(%1B/%2B)"
 
 
 
