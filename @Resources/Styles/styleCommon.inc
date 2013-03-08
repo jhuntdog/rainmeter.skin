@@ -13,7 +13,7 @@ SidePaneContentWidth=(#SidebarWidth#-24)
 
 TodayPaneHeight=85
 WeatherPaneHeight=60
-WeatherAppPaneHeight=100
+WeatherAppPaneHeight=78
 ClockPanelHeight=220
 TimePanelHeight=72
 SystemPaneHeight=120

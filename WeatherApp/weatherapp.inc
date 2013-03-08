@@ -3,7 +3,7 @@
 
 [StyleWeatherImage]
 X=24
-Y=18r
+Y=r
 W=64
 H=64
 ImageName=#@#Images\weather\%1.png
@@ -17,7 +17,7 @@ FontSize=11
 AntiAlias=1
 ClipString=0
 X=R
-Y=5R
+Y=-12R
 
 [StyleWeatherText]
 StringAlign=Left
@@ -27,7 +27,7 @@ FontSize=16
 AntiAlias=1
 ClipString=0
 X=96
-Y=12R
+Y=R
 
 [StyleTempText]
 StringStyle=Bold
