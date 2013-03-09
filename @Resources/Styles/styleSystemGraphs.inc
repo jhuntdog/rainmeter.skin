@@ -17,6 +17,12 @@ SolidColor=#colorBlue#
 [StyleGraphFrameMemory]
 SolidColor=#colorPurple#
 
+[StyleGraphFrameHdd]
+SolidColor=#colorGreen#
+
+[StyleGraphFrameNet]
+SolidColor=#colorBrown#
+
 [StyleGraphFrameInner]
 SolidColor=#colorWhite#
 X=2r
@@ -65,6 +71,7 @@ ClipString=0
 
 [StyleTextStatLabel]
 StringAlign=left
+FontColor=#colorGrayDarker#
 FontSize=10
 StringStyle=bold
 AntiAlias=1

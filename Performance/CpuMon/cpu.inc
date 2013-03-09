@@ -98,14 +98,12 @@ MeasureName=MeasureCpu
 
 
 
-;MeterStyle=StyleSystemGraph | StyleSystemGraphCpu
-
 ;-----------------------
 ; TEXT STATS
 
 [LabelCpu]
 Meter=STRING
-MeterStyle=StyleTextStat | StyleTextStatLabel | StyleLabelCpu
+MeterStyle=StyleTextStat | StyleTextStatLabel
 Text="CPU"
 
 [TextCpuValue1]

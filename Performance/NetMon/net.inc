@@ -1,5 +1,5 @@
 ;--------------------------------------------------------------------------------------------
-; cpu
+; hdd
 
 
 
@@ -11,20 +11,11 @@
 ;---------------------------------------------------------------------
 ; MEASURES
 
-[MeasureRam]
-Measure=PhysicalMemory
+[MeasureNetIn]
+Measure=NetIn
 
-[MeasurePhysMemTotal]
-Measure=PhysicalMemory
-Total=1
-UpdateDivider=3600
-
-[MeasurePhysMemUsed]
-Measure=PhysicalMemory
-UpdateDivider=2
-
-
-
+[MeasureNetOut]
+Measure=NetOut
 
 ;---------------------------------------------------------------------
 ; METERS
@@ -61,14 +52,14 @@ Meter=Image
 MeterStyle=PaneResetTop
 
 ;------------
-; RAM
+; CPU
 
 ;-----------------------
 ; GRAPH FRAME
 
 [GraphFrameOutline]
 Meter=Image
-MeterStyle=StyleGraphFrameOutline | StyleGraphFrameMemory
+MeterStyle=StyleGraphFrameOutline | StyleGraphFrameNet
 
 [GraphFrameInner]
 Meter=Image
@@ -79,43 +70,40 @@ MeterStyle=StyleGraphFrameInner
 ;-----------------------
 ; GRAPH
 
-
-[GraphMemory]
-Meter=Histogram
-MeterStyle=StyleSystemGraph | StyleSystemGraphMemory
-MeasureName=MeasureRam
-Autoscale=0
-
-[GraphLineMemory]
+[MeterNetworkLine]
 Meter=Line
+MeasureName=MeasureNetOut
+MeasureName2=MeasureNetIn
 MeterStyle=StyleSystemGraphLine
-LineColor=#colorPurple#
-MeasureName=MeasureRam
+LineCount=2
+LineColor=#colorOrange#
+LineColor2=#colorBrown#
+AutoScale=1
+AntiAlias=1
 
 
 ;-----------------------
 ; TEXT STATS
-[LabelMemory]
+
+[LabelNet]
 Meter=STRING
 MeterStyle=StyleTextStat | StyleTextStatLabel
-Text="RAM"
+Text="Net"
 
-[TextMemoryValue1]
+[TextNetValue1]
 Meter=STRING
-MeterStyle=StyleTextStat | StyleTextStatValue | StyleLabelMemory
-MeasureName=MeasureRam
-Percentual=1
+MeterStyle=StyleTextStat | StyleTextStatValue | StyleLabelNet
+FontColor=#colorOrange#
+MeasureName=MeasureNetOut
 AutoScale=1
-Text="%1%"
+Text="Send %1"
 
-[TextMemoryValue2]
+[TextNetValue2]
 Meter=STRING
-MeterStyle=StyleTextStat | StyleTextStatValue2 | StyleLabelMemory
-MeasureName=MeasurePhysMemUsed
-MeasureName2=MeasurePhysMemTotal
+MeterStyle=StyleTextStat | StyleTextStatValue | StyleLabelNet
+FontColor=#colorBrown#
+MeasureName=MeasureNetIn
 AutoScale=1
-Text="(%1B/%2B)"
-
-
+Text="Receive %1"
 
 
