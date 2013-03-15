@@ -11,12 +11,12 @@ SkinMouseOver=0
 
 SidePaneContentWidth=(#SidebarWidth#-24)
 
-TodayPaneHeight=85
+TodayPaneHeight=78
 WeatherPaneHeight=60
 WeatherAppPaneHeight=78
 ClockPanelHeight=220
 TimePanelHeight=72
-SystemPaneHeight=120
+SystemPaneHeight=104
 NotesPaneHeight=180
 PerformancePaneHeight=86
 

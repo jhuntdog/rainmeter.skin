@@ -10,7 +10,7 @@ FontSize=14
 AntiAlias=1
 ClipString=0
 X=12
-Y=5R
+Y=r
 H=30
 
 [StyleMonth]
@@ -51,7 +51,7 @@ FontSize=32
 AntiAlias=1
 ClipString=0
 X=R
-Y=r
+Y=-4r
 
 
 [StyleTime]
@@ -62,7 +62,7 @@ StringStyle=Bold
 FontSize=11
 AntiAlias=1
 ClipString=0
-X=R
+X=2R
 Y=R
 
 
