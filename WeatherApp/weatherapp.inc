@@ -38,15 +38,15 @@ X=96
 Y=-10R
 
 [StyleWeatherDesc]
-FontSize=9
+FontSize=8
 X=96
-Y=-6R
+Y=-5R
 ClipString=1
 
 [StyleWeatherHiLo]
 FontSize=10
 X=96
-Y=-5R
+Y=-4R
 
 ;---------------------------------------------------------------------
 ; MEASURES
