@@ -38,9 +38,15 @@ X=96
 Y=-10R
 
 [StyleWeatherDesc]
-FontSize=10
+FontSize=9
 X=96
 Y=-6R
+ClipString=1
+
+[StyleWeatherHiLo]
+FontSize=10
+X=96
+Y=-5R
 
 ;---------------------------------------------------------------------
 ; MEASURES
@@ -112,7 +118,7 @@ MeterStyle=StyleWeatherText | StyleWeatherDesc
 Meter=String
 MeasureName=MeasureWeatherDay2Low
 MeasureName2=MeasureWeatherDay2High
-MeterStyle=StyleWeatherText | StyleWeatherDesc
+MeterStyle=StyleWeatherText | StyleWeatherHiLo
 Text=%1° / %2°
 
 
