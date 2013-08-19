@@ -41,7 +41,7 @@ Y=-10R
 FontSize=8
 X=96
 Y=-5R
-ClipString=1
+ClipString=0
 
 [StyleWeatherHiLo]
 FontSize=10
